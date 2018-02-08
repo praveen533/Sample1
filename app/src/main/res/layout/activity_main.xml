@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.sample1.MainActivity">
+    tools:context="com.sample1.NewMessageActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <!--<android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme">
@@ -30,5 +30,63 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email" />
+-->
+
+    <TextView
+        android:id="@+id/mobileNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Numer"
+        android:layout_gravity="left"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="65dp"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mobileNumberTextView"
+        android:inputType="phone"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="35dp"
+        android:hint="Enter Mobile Number"
+        />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:layout_gravity="left"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="175dp"
+        android:textSize="25dp"
+        />
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mobileNumberTextView"
+        android:inputType="textLongMessage"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="35dp"
+        android:hint="Enter your Message"
+        />
+
+    <Button
+        android:id="@+id/dummyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SendNow"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal"
+        />
+
 
 </android.support.design.widget.CoordinatorLayout>

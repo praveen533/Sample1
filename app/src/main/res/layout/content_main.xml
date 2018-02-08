@@ -11,4 +11,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.sample1.MainActivity"
     tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praveen Chowdary Pasumarthi"
+        android:textAllCaps="true"
+        android:textSize="40px"
+        />
+
 </RelativeLayout>
